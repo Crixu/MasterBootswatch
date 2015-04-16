@@ -45,9 +45,9 @@
                         </div>
 </div>
 <div class="navbar-collapse collapse">
-<?php  if ($this->countModules('navigation')) : ?>
+<?php  if ($this->countModules('position-1')) : ?>
                         <nav class="navigation" role="navigation">
-                                <jdoc:include type="modules" name="navigation" style="none" />
+                                <jdoc:include type="modules" name="position-1" style="none" />
                         </nav>
                         <?php  endif; ?>
 </div>
@@ -56,31 +56,31 @@
 </div>
 <!--Navigation-->
 <!--fullwidth-->
-<?php  if($this->countModules('fullwidth')) : ?>
+<?php  if($this->countModules('position-2')) : ?>
 <div id="fullwidth">
 <div class="row">
-<jdoc:include type="modules" name="fullwidth" style="block"/>
+<jdoc:include type="modules" name="position-2" style="block"/>
 </div>
 </div>
 <?php  endif; ?>
 <!--fullwidth-->
 <!--Showcase-->
-<?php  if($this->countModules('showcase')) : ?>
+<?php  if($this->countModules('banner')) : ?>
 <div id="showcase">
 <div class="container">
 <div class="row">
-<jdoc:include type="modules" name="showcase" style="block"/>
+<jdoc:include type="modules" name="banner" style="block"/>
 </div>
 </div>
 </div>
 <?php  endif; ?>
 <!--Showcase-->
 <!--Feature-->
-<?php  if($this->countModules('feature')) : ?>
+<?php  if($this->countModules('position-3')) : ?>
 <div id="feature">
 <div class="container">
 <div class="row">
-<jdoc:include type="modules" name="feature" style="block" />        
+<jdoc:include type="modules" name="position-3" style="block" />        
 </div>
 </div>
 </div>
@@ -97,18 +97,18 @@
 <?php  endif; ?>
 <div id="main" class="row show-grid">
 <!-- Left -->
-<?php  if($this->countModules('left')) : ?>
+<?php  if($this->countModules('position-8')) : ?>
 <div id="sidebar" class="col-sm-<?php  echo $leftcolgrid; ?>">
-<jdoc:include type="modules" name="left" style="block" />
+<jdoc:include type="modules" name="position-8" style="block" />
 </div>
 <?php  endif; ?>
 <!-- Component -->
 <div id="container" class="col-sm-<?php  echo (12-$leftcolgrid-$rightcolgrid); ?>">
 <!-- Content-top Module Position -->        
-<?php  if($this->countModules('content-top')) : ?>
+<?php  if($this->countModules('content')) : ?>
 <div id="content-top">
 <div class="row">
-<jdoc:include type="modules" name="content-top" style="block" />        
+<jdoc:include type="modules" name="content" style="block" />        
 </div>
 </div>
 <?php  endif; ?>
@@ -145,9 +145,9 @@
 <?php  endif; ?>
 </div>
 <!-- Right -->
-<?php  if($this->countModules('right')) : ?>
+<?php  if($this->countModules('position-7')) : ?>
 <div id="sidebar-2" class="col-sm-<?php  echo $rightcolgrid; ?>">
-<jdoc:include type="modules" name="right" style="block" />
+<jdoc:include type="modules" name="position-7" style="block" />
 </div>
 <?php  endif; ?>
 </div>
